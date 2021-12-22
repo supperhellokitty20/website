@@ -21,45 +21,45 @@ var iRow; // initialise current row
 
 function typewriter()
 {
-	sContents =  ' ';
-	iRow = Math.max(0, iIndex-iScrollAt);
-	var destination = document.getElementById("typedtext");
+    sContents =  ' ';
+    iRow = Math.max(0, iIndex-iScrollAt);
+    var destination = document.getElementById("typedtext");
 
-	while ( iRow < iIndex ) {
-		sContents += aText[iRow++] + '<br />';
-	}
-	destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-	if ( iTextPos++ == iArrLength ) {
-		iTextPos = 0;
-		iIndex++;
-		if ( iIndex != aText.length ) {
-			iArrLength = aText[iIndex].length;
-			setTimeout("typewriter()", 500);
-		}
-	} else {
-		setTimeout("typewriter()", iSpeed);
-	}
+    while ( iRow < iIndex ) {
+        sContents += aText[iRow++] + '<br />';
+    }
+    destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+    if ( iTextPos++ == iArrLength ) {
+        iTextPos = 0;
+        iIndex++;
+        if ( iIndex != aText.length ) {
+            iArrLength = aText[iIndex].length;
+            setTimeout("typewriter()", 500);
+        }
+    } else {
+        setTimeout("typewriter()", iSpeed);
+    }
 }
 typewriter();
 
 //Progress Bar 
 var i = 0;
 function move() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("Bar");
-    var width = 1;
-    var id = setInterval(frame, 100);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-      }
+    if (i == 0) {
+        i = 1;
+        var elem = document.getElementById("Bar");
+        var width = 1;
+        var id = setInterval(frame, 100);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+                i = 0;
+            } else {
+                width++;
+                elem.style.width = width + "%";
+            }
+        }
     }
-  }
 }
 move() ; 
 //End of progress bar 
@@ -67,10 +67,11 @@ move() ;
 //Hide loading space and show main content page 
 var load 
 function loading(){ 
-	load= setTimeout(showContent,15000)  ;
+	load= setTimeout(showContent,3000)  ;
 } 
 function showContent(){
- document.getElementById("loader").style.display = "none";
-  document.getElementById("mainContent").style.display = "block";
+    //document.getElementById("loader").style.display = "none";
+    document.getElementById("loader").remove() ;
+    document.getElementById("mainContent").style.display = "block";
 } 
 
