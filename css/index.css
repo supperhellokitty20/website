@@ -1,0 +1,192 @@
+
+body {
+  background-color:#000;
+  margin:0;
+  overflow:hidden;
+  padding:0;
+}
+
+.screen {
+  animation:colorPulse 5s infinite ease-in-out;
+  background-image:radial-gradient(#444, #000);
+  box-shadow:0 0 5vmin 1vmin #000 inset;
+  box-sizing:border-box;
+  font-family:'Fira Mono', monospace;
+  font-size:20px;
+  height:100vh;
+  overflow:hidden;
+  padding:10vmin;
+  width:100vw;
+}
+
+.screen:before {
+  animation:wave 10s infinite ease-in-out;
+  content:"";
+  height:20vh;
+  left:0;
+  opacity:.5;
+  position:absolute;
+  right:0;
+  z-index:1;
+}
+
+.screen:after {
+  background-image:linear-gradient(transparent, transparent 3px, #222);
+  background-size:4px 4px;
+  bottom:0;
+  content:"";
+  left:0;
+  pointer-events:none;
+  position:absolute;
+  right:0;
+  top:0;
+  z-index:2;
+}
+
+p:last-child:after {
+  animation:blink 1s infinite;
+  content:"_";
+}
+
+@keyframes colorPulse {
+  0%, 100% {
+    color:#0c0;
+  }
+  48%, 52% {
+    color:#090;
+  }
+  50% {
+    color:#060;
+  }
+}
+
+@keyframes wave {
+  0% {
+    box-shadow:0 -10vh 20vh #0c0;
+    top:-100vh;
+  }
+  48%, 52% {
+    box-shadow:0 -10vh 20vh #090;
+  }
+  50% {
+    box-shadow:0 -10vh 20vh #060;
+  }
+  100% {
+    box-shadow:0 -10vh 20vh #0c0;
+    top:200vh;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity:0;
+  }
+}
+/* Progress Bar*/
+#progressBar{
+  width: 100%;
+  background-color: grey;
+}
+
+#Bar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
+
+/*Main page content*/
+#mainContent{
+    display: none ; 
+} 
+/*Nav bar*/
+.navbar {
+  border-bottom: 2px solid;
+  margin: 0px 10px;
+}
+.navbar::before, .navbar::after {
+  height: 7px;
+  width: 2px;
+  position: absolute;
+  display: block;
+  content: "";
+  background: #51fe7d;
+  bottom: -8px;
+}
+.navbar::before {
+  left: 0px;
+}
+.navbar::after {
+  right: 0px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  position: relative;
+  min-width: fit-content;
+}
+.nav-item.active::before {
+  content: "";
+  position: absolute;
+  --width:100%;
+  width: var(--width);
+  padding: 10px;
+  height: 28px;
+  bottom: -10px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  border-left: 2px solid;
+  background: #272b23;
+  margin-left: calc((var(--width) / 2) * -1);
+  left: 50%;
+}
+
+#mainNav .nav-item {
+  font-size: 5vh;
+  line-height: 22px;
+  padding: 0% 1%;
+  margin-top: 1vh;
+  font-weight: bold;
+}
+#mainNav .nav-link {
+  position: relative;
+  z-index: 50;
+  background: #272b23;
+  width: 100%;
+  color: #51fe7d;
+}
+
+.nav-tabs {
+  border-bottom: none;
+  margin: 10px;
+}
+.nav-tabs .nav-link {
+  font-size: 4vh;
+  border: 1px solid transparent !important;
+  background: transparent !important;
+  padding: 5px 10px;
+  position: relative;
+  z-index: 50;
+  background: #272b23;
+  margin: auto;
+  color: #51fe7d !important;
+}
+.nav-tabs .nav-link:hover {
+  padding: 5px 10px;
+  position: relative;
+  z-index: 50;
+  background: #272b23;
+  margin: auto;
+  color: #51fe7d !important;
+}
+.nav-tabs > li > .active {
+  opacity: 1;
+}
+.nav-tabs > li > a {
+  opacity: 0.6;
+}
+
+
