@@ -70,8 +70,7 @@ function loading(){
 	load= setTimeout(showContent,3000)  ;
 } 
 function showContent(){
-    //document.getElementById("loader").style.display = "none";
-    document.getElementById("loader").remove() ;
+    document.getElementById("loader").style.display = "none";
     document.getElementById("mainContent").style.display = "block";
 } 
 
