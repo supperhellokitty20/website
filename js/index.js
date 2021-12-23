@@ -68,13 +68,9 @@ move() ;
 var delay; 
 function load(){ 
 	delay= setTimeout(showContent,3000)  ;
-    document.getElementById("indexBtn").style.display = "none";
 } 
 function showContent(){
-    /*
     document.getElementById("loader").style.display = "none";
     document.getElementById("mainContent").style.display = "block";
-    */
-    document.getElementById("indexBtn").style.display = "block";
 } 
 

@@ -4,19 +4,28 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link  rel="stylesheet" href="./css/index.css"></link> 
+		<link  rel="stylesheet" href="./css/theme.css"></link> 
 		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono"></link> 
 		<link  rel="stylesheet" href="./css/bootstrap.min.css"></link> 
 
 	</head>
 	<body onload="load()">
 		<div class="screen">
-			<div id="loader" class="mainContent"> 
+			<div id="loader"> 
 				<div id="progressBar" style="margin:1;">
 					<div id="Bar"></div> 
 				</div> 			
 				<div id="typedtext"></div> 
-                <a id ="indexBtn" type="button" href="./about.html">Access Database</a>  
 			</div> 
+			<div id="mainContent" >
+				<div id = "Box" class=" row container d-flex justify-content-center">
+					<h1>Heading the right direction</h1> 
+					<ul id="buttons">
+						<li><a href="./about.html">> ABOUT</a></li>
+						<li><a href="./project.html">> PROJECTS</a></li>
+					</ul>		
+				</div>
+			</div>
 		</div>
 	</body>
 	<script src="./js/index.js"></script> 
