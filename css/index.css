@@ -20,15 +20,28 @@ ul {
 	list-style-type:none;
 } 
 
+a{
+	color : #51fe7d  ;
+} 
+
+/*Create color effect while hover over the button*/
+li{
+    color : orange ; 
+} 
+
+li:hover{
+	background-color : yellow ; 
+} 
+
 
 #Box{
-	border-color  : red ;
+	border-color  : #51fe7d  ;
 	border-style : solid ;
 	box-sizing:border-box;
 	font-family:'Fira Mono', monospace;
 	font-size:20px;
-	height:70vh;
+	height:60vh;
 	overflow:hidden;
-	padding:10vmin;
-	width:100vw;
+	padding:20vmin;
+	width:90vw;
 }  
