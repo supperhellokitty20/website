@@ -20,19 +20,8 @@ ul {
 	list-style-type:none;
 } 
 
-a{
-	color : #51fe7d  ;
-} 
 
 /*Create color effect while hover over the button*/
-li{
-    color : orange ; 
-} 
-
-li:hover{
-	background-color : yellow ; 
-} 
-
 
 #Box{
 	border-color  : #51fe7d  ;

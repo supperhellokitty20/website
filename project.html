@@ -1,35 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <link  rel="stylesheet" href="./css/theme.css"></link> 
-        <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono"></link> 
-        <link  rel="stylesheet" href="./css/bootstrap.min.css"></link> 
-    </head>
-    <body>
-        <div class="screen">
-            <div id="mainContent" style="display:block;">
-                <nav class="navbar navbar-expand navbar-light">
-                    <div class="collapse navbar-collapse" id="mainNav">
-                        <div class="container-fluid">
-                            <ul class="navbar-nav">
-                                <li class="nav-item ">
-                                    <a href="about.html" class="nav-link">ABOUT</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a href="project.html" class="nav-link">PROJECTS</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav><!--End of nav-->   
-                <br> 
-                <div class="container">
-                    <div class="row">
-                        <h1>Projects pane coming soon</h1> 
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link  rel="stylesheet" href="./css/theme.css"></link> 
+		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono"></link> 
+		<link  rel="stylesheet" href="./css/bootstrap.min.css"></link> 
+		<link  rel="stylesheet" href="./css/project.css"></link> 
+	</head>
+	<body>
+		<div class="screen">
+			<div id="mainContent" style="display:block;">
+				<nav class="navbar navbar-expand navbar-light">
+					<div class="collapse navbar-collapse" id="mainNav">
+						<div class="container-fluid">
+							<ul class="navbar-nav">
+								<li class="nav-item ">
+									<a href="about.html" class="nav-link">ABOUT</a>
+								</li>
+								<li class="nav-item active">
+									<a href="project.html" class="nav-link">PROJECTS</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav><!--End of nav-->
+				<div class="container" style="padding:20px;" >
+					<div class="tab-content">
+						<div class="tab-pane active" id="portfolio" role="tabpanel">
+							<div class="row">
+								<div class="col-12">
+									<ul class="nav nav-tabs">
+										<li class="nav-item">
+											<a class="nav-link active" data-toggle="tab">
+												Projects 	
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-sm-12 col-md-6">
+									<ul class="item-list item-list1">
+										<li class="active"><a href="#" id="owcardgame" class="owcardgame">Overwatch Card Game</a></li>
+										<li><a href="#" id="todo-app" class="todo-app">To Do Note App</a></li>
+										<li><a href="#" id="khawiz" class="khawiz">Khawiz Leonard: An NBA Quiz Site</a></li>
+										<li><a href="#" id="pipboy" class="pipboy">Fallout Pipboy Longform CV Website</a></li>
+									</ul>
+								</div>
 
-                    </div> 
-                </div>
-    </body>
+								<div class="col-sm-12 col-md-6">
+									<div class="item-stats">
+										<div class="row-highlight">
+											<div class="row">
+												<div class="col-3">
+													<strong>Front End</strong>
+												</div>
+												<div class="col-9">
+													<span class="frontend float-right">React, JavaScript</span>
+												</div>
+											</div>
+										</div>
+										<div class="row-highlight">
+											<div class="row">
+												<div class="col-3">
+													<strong>Back End</strong>
+												</div>
+												<div class="col-9">
+													<span class="backend float-right">N/A</span>
+												</div>
+											</div>
+										</div>
+										<div class="row-highlight">
+											<div class="row">
+												<div class="col-3">
+													<strong>Database</strong>
+												</div>
+												<div class="col-9">
+													<span class="database float-right">N/A</span> 
+												</div>
+											</div>
+										</div>
+
+										<div class="row-highlight">
+											<div class="row">
+												<div class="col-3">
+													<strong>Link</strong>
+												</div>
+												<div class="col-9">
+													<span class="link float-right"><a href='https://nathanhmiles.github.io/owcardgame'><u>nathanhmiles.github.io/owcardgame</u></a> <a href='github.com/nathanhmiles/owcardgame'><u>GitHub Repo</u></a></span>
+												</div>
+											</div>
+										</div>
+
+										<div id="detail-container">
+											<h4><strong>Project Overview:</strong></h4>
+											<ul>
+												<li class="info1">Two-player fan-made card game based on Blizzard’s team-based FPS video game “Overwatch”.</li>
+												<li class="info2">Features: 34 character cards with two abilities each, complex interaction of damage, healing, shields, and status effects, match scoring system, character “barks”.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane" id="skills" role="tabpanel">
+							<div class="row">
+								<div class="col-6">
+									<ul class="item-list item-list2">
+										<li class="active"><a href="#" id="js" class="js">JavaScript</a></li>
+										<li><a href="#" id="python" class="python">Python</a></li>
+										<li><a href="#" id="other" class="other">Other</a></li>
+
+										<br/><br>
+									</ul>
+
+								</div>
+
+								<div class="col-6">
+									<div class="item-stats">
+										<h4> Skill Summary:</h4>
+										<div class="row-highlight">
+											<div class="row">
+												<div class="col-4">
+													<strong>Proficiencies</strong>
+												</div>
+												<div class="col-8">
+													<span class="code proficiencies float-right">React, Material UI, jQuery, Node, Express, Mongoose</span>
+												</div>
+											</div>
+										</div>
+
+										<div id="detail-container">
+											<h4>Skill Overview:</h4>
+											<ul>
+												<li class="code info1">Completed solo projects including a To Do Note app and a procedurally-generated quiz app, please see the Projects section for more details.</li>
+												<li class="code info2">Completed online courses such as Harvard’s CS50 and CS50W, and many other disparate online courses via Udemy, FreeCodeCamp etc.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>                         
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="./js/project.js"></script>
+	</body>
 </html>
