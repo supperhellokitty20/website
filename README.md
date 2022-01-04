@@ -8,6 +8,8 @@ A theme inspired by FallOut pipBoy
 
 # TODO 
 
-* Build project page pannel 
+* Add more detail to About page 
 
-* Build About page  
+* Add js and data to projects page 
+
+* Add footer to each page 
