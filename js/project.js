@@ -18,30 +18,30 @@ $(document).ready(function(){
     //Handling data change depend on project 
     const data = [
         { 
-            name : "owcardgame" , 
-            frontend: "Nigga, JavaScript",
+            name : "humix" , 
+            frontend: "Arduino, JavaScript",
             backend: "N/A",
             database: "N/A",
-            link: "<a href='https://nathanhmiles.github.io/owcardgame'><u>nathanhmiles.github.io/owcardgame</u></a> <a href='github.com/nathanhmiles/owcardgame'><u>GitHub Repo</u></a>",
+            link: "<a href=''>Demo</a><a href=''>GitHub Repo</a>",
             field5: "",
             info1:
-            "Dick riding game",
+            "An arduino project",
             info2:
             "Lying no cap",
             info3: "",
         }, 
         { 
-            name : "owcardgame" , 
-            frontend: "Nigga, JavaScript",
-            backend: "N/A",
+            name : "moice" , 
+            frontend: "Boostrap , HTML , JavaScript",
+            backend: "peerjs",
             database: "N/A",
-            link: "<a href='https://nathanhmiles.github.io/owcardgame'><u>nathanhmiles.github.io/owcardgame</u></a> <a href='github.com/nathanhmiles/owcardgame'><u>GitHub Repo</u></a>",
+            link: "<a href=''>Demo</a><a href=''>GitHub Repo</a>",
             field5: "",
             info1:
-            "Dick riding game",
+            "Moice is a decentralize video and voice chat app",
             info2:
-            "Lying no cap",
-            info3: "",
+            "This application allow total peer to peer connection between users ",
+            info3: "Also support  AR filter from SnapCam",
         } 
     ] ;  
     //End data 

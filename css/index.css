@@ -14,8 +14,14 @@
 
 #mainContent{
 	display: none ; 
+    align-items : center ;
 } 
-
+#Box>h1{
+    text-align:center ;
+}
+#buttons{
+    text-align : center ; 
+} 
 ul {
 	list-style-type:none;
 } 

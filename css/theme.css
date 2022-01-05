@@ -195,7 +195,7 @@ p:last-child:after {
 }
 
 .pip-footer {
-    position: absolute;
+	position: fixed !important;
     bottom: 10px;
     width: 100%;
     margin: 0px;
@@ -205,6 +205,15 @@ p:last-child:after {
     left: 0;
     right: 0;
 }
+.text-left{ 
+	text-align : left !important ;
+} 
+.text-center{ 
+	text-align : center !important;
+} 
+.text-right{ 
+	text-align : right !important;
+} 
 
 .footer-section {
     background: rgba(81, 254, 125, 0.15);

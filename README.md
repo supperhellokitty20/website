@@ -10,6 +10,5 @@ A theme inspired by FallOut pipBoy
 
 * Add more detail to About page 
 
-* Add js and data to projects page 
+* Add data to projects page  
 
-* Add footer to each page 
