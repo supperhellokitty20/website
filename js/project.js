@@ -25,9 +25,9 @@ $(document).ready(function(){
             link: "<a href=''>Demo</a><a href=''>GitHub Repo</a>",
             field5: "",
             info1:
-            "An arduino project",
+            "An arduino based devices , that track moisture in the area , and predict rain probability.",
             info2:
-            "Lying no cap",
+            "The project also have a different version that use ESP-32 wifi enabled controller to grab data on the internet",
             info3: "",
         }, 
         { 
@@ -42,7 +42,34 @@ $(document).ready(function(){
             info2:
             "This application allow total peer to peer connection between users ",
             info3: "Also support  AR filter from SnapCam",
+        }, 
+        { 
+            name : "pythonScraper" , 
+            frontend: "N/A",
+            backend: "python3",
+            database: "N/A",
+            link: "<a href=''>GitHub Repo</a>",
+            field5: "",
+            info1:
+            "An instagram data collecting script",
+            info2:
+            "Build with the purpose to automate engagment on instagram",
+            info3: "The script will auto reply for comment, auto follow users based on user target audience",
+        }, 
+        { 
+            name : "70sHecking" , 
+            frontend: "Boostrap , HTML , JavaScript",
+            backend: "peerjs",
+            database: "N/A",
+            link: "<a href=''>Demo</a><a href=''>GitHub Repo</a>",
+            field5: "",
+            info1:
+            "A retro inspired for this website",
+            info2:
+            "Build using pure HTML and CSS and js ",
+            info3: ""  
         } 
+
     ] ;  
     //End data 
     $(".item-list a").on("click",function(e){
