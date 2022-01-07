@@ -5,6 +5,9 @@ body {
     overflow:hidden;
     padding:0;
 }
+ h1 {
+	color : #51fe7d ; 
+} 
 a:hover{
   background: #51fe7d !important;
   color : black !important; 

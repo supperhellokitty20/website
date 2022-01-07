@@ -19,10 +19,10 @@ $(document).ready(function(){
     const data = [
         { 
             name : "humix" , 
-            frontend: "Arduino, JavaScript",
+            frontend: "Arduino, C++ and public libraries",
             backend: "N/A",
             database: "N/A",
-            link: "<a href=''>Demo</a><a href=''>GitHub Repo</a>",
+            link: "<a href='https://github.com/supperhellokitty20/HUMIX'>GitHub Repo</a>",
             field5: "",
             info1:
             "An arduino based devices , that track moisture in the area , and predict rain probability.",
@@ -35,7 +35,7 @@ $(document).ready(function(){
             frontend: "Boostrap , HTML , JavaScript",
             backend: "peerjs",
             database: "N/A",
-            link: "<a href=''>Demo</a><a href=''>GitHub Repo</a>",
+            link: "<a href='https://moinc-c34cc.web.app/'>Demo</a> <a href='https://github.com/supperhellokitty20/Moice'>GitHub Repo</a>",
             field5: "",
             info1:
             "Moice is a decentralize video and voice chat app",
@@ -48,7 +48,7 @@ $(document).ready(function(){
             frontend: "N/A",
             backend: "python3",
             database: "N/A",
-            link: "<a href=''>GitHub Repo</a>",
+            link: "<a href='https://github.com/supperhellokitty20/insta_scrappy'>GitHub Repo</a>",
             field5: "",
             info1:
             "An instagram data collecting script",
@@ -59,15 +59,15 @@ $(document).ready(function(){
         { 
             name : "70sHecking" , 
             frontend: "Boostrap , HTML , JavaScript",
-            backend: "peerjs",
+            backend: "N/A",
             database: "N/A",
-            link: "<a href=''>Demo</a><a href=''>GitHub Repo</a>",
+            link: "<a href='./index.html'>Demo</a> <a href='https://github.com/supperhellokitty20/website'>GitHub Repo</a>",
             field5: "",
             info1:
-            "A retro inspired for this website",
+            "A retro inspired theme for this website",
             info2:
             "Build using pure HTML and CSS and js ",
-            info3: ""  
+            info3:" "  
         } 
 
     ] ;  
@@ -83,6 +83,8 @@ $(document).ready(function(){
                 $(".item-stats").find(".info1").html(data[item].info1);
                 $(".item-stats").find(".info2").html(data[item].info2);
                 $(".item-stats").find(".info3").html(data[item].info3);
+                $(".item-stats").find(".link").html(data[item].link);
+
             } 
         } 
     }) ;
